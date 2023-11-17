@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.team__header {
+  margin-bottom: 30px;
+}
+.team__header h1 {
+  font-size: 40px;
+  text-align: center;
+  color: red;
+}
+.team__header p {
+  font-size: 20px;
+  text-align: center;
+}
+.team__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.team__card {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.team__card__title {
+  font-size: 25px;
+  color: red;
+}
+.team__card__desc {
+  margin-bottom: 20px;
+}
+.team__card__link {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid red;
+  text-decoration: none;
+  color: red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.team__card__link:hover {
+  background-color: red;
+  color: white;
+}
